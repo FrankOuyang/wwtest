@@ -12,7 +12,6 @@ from excel_to_json import excel_to_json  # 新增导入
 import tempfile
 import os
 from fastapi import HTTPException
-import debugpy  # 新增调试工具导入
 
 app = FastAPI()
 
@@ -104,16 +103,3 @@ async def create_solution(context: ExperimentProtocol):
 
 # 添加Vercel需要的ASGI入口
 app = app
-
-
-def main():
-    # 启用调试器（仅在开发环境）
-    debugpy.listen(5678)
-    print("Debugger is ready, attach to port 5678")
-
-    # 启动FastAPI应用
-    import uvicorn
-    uvicorn.run("wwsolution:app", host="0.0.0.0", port=8000, reload=True)  # 修改为字符串形式传入
-
-if __name__ == "__main__":
-    main()
