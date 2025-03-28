@@ -27,5 +27,8 @@ async def create_solution(context: ExperimentProtocol):
 
     # Return the result as a StreamingResponse
     return StreamingResponse(result,
-                             media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                             headers={"Content-Disposition": "attachment; filename=wwsolution.docx"})
+                            media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                            headers={"Content-Disposition": "attachment; filename=wwsolution.docx"})
+
+# 添加Vercel需要的ASGI入口
+app = app
