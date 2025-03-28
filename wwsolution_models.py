@@ -15,7 +15,7 @@ class Pathogen(BaseModel):
 
 class TestArticles(BaseModel):
     title: str
-    items: List[str]
+    content: str
 
 class Control(BaseModel):
     title: str
@@ -36,10 +36,6 @@ class MethodSection(BaseModel):
 class Methods(BaseModel):
     title: str
     sections: List[MethodSection]
-
-class ExperimentTimeline(BaseModel):
-    title: str
-    image: str
 
 class ExperimentalGroups(BaseModel):
     title: str
@@ -63,6 +59,5 @@ class ExperimentProtocol(BaseModel):
     solvent_control: Control
     experimental_sys: ExperimentalSys
     methods: Methods
-    experiment_timeline: ExperimentTimeline
     experimental_groups: ExperimentalGroups
     detection_indicators: DetectionIndicators

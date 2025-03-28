@@ -5,3 +5,5 @@ python-multipart==0.0.6
 python-docx>=0.8.11
 pydantic==2.6.4
 requests==2.31.0
+pandas==2.2.1  # 新增pandas依赖
+openpyxl==3.1.2  # 支持Excel处理

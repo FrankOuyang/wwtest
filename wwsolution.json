@@ -13,10 +13,7 @@
     },
     "test_articles": {
       "title": "Test Articles",
-      "items": [
-        "阿奇霉素",
-        "鱼腥草注射液"
-      ]
+      "items": "阿奇霉素、鱼腥草注射液"
     },
     "positive_control": {
       "title": "Positive Control",
