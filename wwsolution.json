@@ -1,0 +1,117 @@
+{
+    "purpose": {
+      "title": "Experiment Purpose",
+      "content": "探讨鱼腥草注射液联合阿奇霉素在小鼠感染肺炎支原体后炎症中的作用及机制研究"
+    },
+    "nature": {
+      "title": "Experiment Nature",
+      "content": "科研类-药效和机制研究"
+    },
+    "pathogen": {
+      "title": "Pathogen",
+      "content": "肺炎支原体（M.Pneumonia，MP）ATCC 29342"
+    },
+    "test_articles": {
+      "title": "Test Articles",
+      "items": [
+        "阿奇霉素",
+        "鱼腥草注射液"
+      ]
+    },
+    "positive_control": {
+      "title": "Positive Control",
+      "content": "-"
+    },
+    "solvent_control": {
+      "title": "Solvent Control",
+      "content": "PBS"
+    },
+    "experimental_sys": {
+      "title": "Experimental System",
+        "quantity": "50只+15只备用",
+        "species": "Balb/c  6～8周龄",
+        "male": "-",
+        "female": "50只+15只备用"
+    },
+    "methods": {
+      "title": "Methods",
+      "sections": [
+        {
+          "title": "病原体处理",
+          "steps": [
+            "菌株选择：使用肺炎支原体（Mycoplasma pneumoniae）ATCC 29342，其致病性和耐药性特征明确。",
+            "复苏流程：将冻存菌株（-80℃）迅速解冻，接种于SP-4液体培养基（含10%灭活胎牛血清、葡萄糖、精氨酸、青霉素抑制剂），37℃、5% CO₂条件下培养7～12天，观察培养基颜色变化（酚红指示剂由红变黄提示代谢活性）。",
+            "浓度检测：取对数生长期菌液，通过比浊法（OD600）定量，于攻毒当天使用生理盐水重悬待接种液至1×10^8CFU/mL。"
+          ],
+          "content": ""
+        },
+        {
+          "title": "肺炎支原体感染模型建立",
+          "steps": [
+            "造模操作：6～8周龄，雌性Balb/c小鼠经异氟烷轻度麻醉后，鼻内滴注50μL菌液（1×10^8CFU/mL，双侧鼻各25μL），每日1次，连续3天，模拟自然吸入感染。接种次数和剂量，需要根据委托方需求进一步确定。",
+            "模型验证：观察小鼠体重下降情况（下降比例>15%）、呼吸急促、毛发竖立等临床症状。末次接种7天后处死3只小鼠取肺组织匀浆进行CFU计数（平板涂布）或qPCR检测。"
+          ],
+          "content": "Balb/c mice were selected due to their high susceptibility to Mycoplasma pneumoniae, stable immune response, and widespread use in pulmonary infection research. This strain shows early and significant inflammatory response and cellular infiltration in lung tissues post-infection."
+        },
+        {
+          "title": "给药观察",
+          "steps": [
+            "设置末次接种第7天的模型验证时间节点为Day0，开始连续给药7天，每天一次。",
+            "给药剂量暂定，依据临床等效剂量转换（体表面积法）确定。"
+          ],
+          "content": ""
+        },
+        {
+          "title": "组织取样",
+          "steps": [
+            "在实验终点将动物处死，取小鼠肺部组织一部分用于肺炎支原体清除率检测，一部分用于HE病理分析，一部分用于炎症因子的检测。"
+          ],
+          "content": ""
+        },
+        {
+          "title": "实验周期",
+          "steps": [
+            "病原微生物处理时间7～12天，肺炎支原体感染模型建立+验证预计10天，给药和给药后观察预计7～14天，检测部分预计14天。",
+            "项目总实验预计40～50天（时间叠加后）。"
+          ],
+          "content": ""
+        }
+      ]
+    },
+    "experiment_timeline": {
+      "title": "Experiment Timeline",
+      "image": "experiment_timeline.png"
+    },
+    "experimental_groups": {
+      "title": "Experimental Groups",
+      "columns": ["Group ID", "Group", "Inoculation", "Quantity"],
+      "rows": [
+        ["A", "Model control", "MP, 50μL*10^8CFU/mL", 6],
+        ["B", "Azithromycin", "MP, 50μL*10^8CFU/mL", 6],
+        ["C", "Houttuynia Injection + Azithromycin high dose", "MP, 50μL*10^8CFU/mL", 6],
+        ["D", "Houttuynia Injection + Azithromycin medium dose", "MP, 50μL*10^8CFU/mL", 6],
+        ["E", "Houttuynia Injection + Azithromycin low dose", "MP, 50μL*10^8CFU/mL", 6]
+      ]
+    },
+    "detection_indicators": {
+      "title": "Detection Indicators",
+      "items": [
+        {
+          "title": "临床观察:",
+          "content": "每周观察动物精神行为、自主活动、毛发、体分泌、粪便、死亡等，病原体接种后开始记录体重变化。"
+        },
+        {
+          "title": "肺炎支原体清除率:",
+          "content": "取肺部组织匀浆处理后，通过平板涂布的方式计数肺炎支原体CFU，或者通过qPCR检测。"
+        },
+        {
+          "title": "病理学分析:",
+          "content": "取肺部组织进行HE染色制片，评估炎症浸润、肺泡结构破坏、间质增厚等，病理评分系统。"
+        },
+        {
+          "title": "炎症因子评估:",
+          "content": "取肺部组织匀浆处理后，通过Elisa方法检测CRP、TNF-α、IFN-γ、IL-6指标。"
+        }
+      ]
+    }
+  }
