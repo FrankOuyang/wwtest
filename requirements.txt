@@ -1,4 +1,7 @@
-fastapi==0.68.1
-docxtpl==0.6.3
-uvicorn==0.15.0
-python-multipart==0.0.5
+fastapi==0.109.1
+docxtpl>=0.14
+uvicorn==0.27.0
+python-multipart==0.0.6
+python-docx>=0.8.11
+pydantic==2.6.4
+requests==2.31.0
