@@ -5,7 +5,8 @@
       "src": "wwsolution.py",
       "use": "@vercel/python",
       "config": { 
-        "runtime": "python3.11" 
+        "runtime": "python3.11",
+        "regions": ["hkg1"] 
       }
     }
   ],
